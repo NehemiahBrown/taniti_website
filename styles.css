@@ -1,0 +1,209 @@
+:root{
+  --primary-color: #F4C95D;
+  --secondary-color: 	#007C9D;
+  --background-color: #FFF8E7;
+  --text-color: #333333;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+background-color: var(--background-color);
+height: 100%;
+margin: 0;
+padding: 0;
+}
+/* nav bar set up*/
+
+.custom-navbar{
+  width: 100%;
+  background-color: var(--secondary-color);
+}
+.custom-navbar ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.custom-navbar li,
+.custom-navbar li a{
+  list-style: none;
+  font-size: 24px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #FFF8E7
+}
+
+.navbar li a:hover{
+  color: 	var(--primary-color);
+}
+
+.taniti_logo_cont{
+  width: 450px;
+  flex-shrink: 0;
+}
+.taniti_logo{
+  width: 100%;
+}
+
+/* home page */
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin: 100px 20px;
+}
+
+.left_side{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.taniti_island_header{
+color: var(--text-color);
+font-size: 80px;
+}
+
+.home_header_text{
+  color: var(--text-color);
+  font-size: 36px;
+}
+
+.learn_more_btn{
+  border:none;
+  width: 150px;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+.carousel-inner img{
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  border: 30px solid var(--primary-color);
+  border-radius: 20px;
+}
+
+/*experiences page*/
+
+.main_exp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experiences_header_cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.experiences_header{
+  font-size: 45px;
+}
+
+.exp_gallery{
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.food_exp,
+.beach_exp,
+.lodging_exp{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+
+.food_exp p,
+.beach_exp p,
+.lodging_exp p{
+  background-color: var(--secondary-color);
+  width: 450px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  color: var(--background-color)
+}
+
+.exp_gallery img{
+  width: 450px;
+  height: 450px;
+  border: 10px solid var(--primary-color);
+  border-radius: 12px;
+}
+
+/*planning page*/
+.main_planning{
+  display: flex;
+  flex-direction: column;
+}
+
+.section_cont{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px 50px 0px;
+}
+
+.planning_tips{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 50%;
+  margin: 20px 40px;
+}
+
+.planning_img{
+  width: 600px;
+  height: 750px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 12px 9px rgba(0, 0, 0, 0.6);
+}
+
+.alcohol{
+  font-weight: bold;
+}
+
+.footer{
+  background-color: var(--secondary-color);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+footer .taniti_footer_text{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.taniti_footer_text p{
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+footer .social_media{
+  display: flex;
+  gap: 20px;
+}
+footer img{
+  width: 20px;
+  height: 20px;
+}
+
